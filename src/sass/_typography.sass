@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400&subset=cyrillic')
+
+=roboto
+	font-family: 'Roboto', sans-serif
+
+=robotoLight
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+
+=robotoLightItalic
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+	font-style: italic
+
+.h2
+	+roboto
+	font-size: 22px
+	line-height: calc(20/22)
+
+.text
+	+roboto
+	font-size: 15px
+	line-height: calc(18/15)
+	letter-spacing: 0.15px
+	&_author
+		color: #007FCE
+		letter-spacing: 0.7px
+.nav-title
+	+roboto
+	line-height: calc(20/18)
+	text-transform: uppercase
+	letter-spacing: 0.7px
+	@include css-lock(10, 18, 320, 960, font-size, px)
+	&_tab
+		font-size: 17px
+		@include css-lock(10, 17, 320, 960, font-size, px)
+
+.menu-title
+	+roboto
+	font-size: 16px
+	line-height: calc(30/16)
+	text-transform: uppercase
+	letter-spacing: 0.7px

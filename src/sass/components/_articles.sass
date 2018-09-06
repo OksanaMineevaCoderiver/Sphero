@@ -1,0 +1,31 @@
+.articles
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	gap: 20px 9px
+	+r(1270)
+		grid-template-columns: repeat(3, 275px)
+		justify-content: center
+	+r(930)
+		grid-template-columns: repeat(2, 275px)
+	+r(650)
+		grid-template-columns: repeat(1, 275px)
+
+.article
+	padding: 10px 15px 13px
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.28);
+	&__img
+		width: 100%
+		height: 212px
+		margin-bottom: 23px
+		background-size: 100% 100%
+	&__title
+		margin-bottom: 28px
+		max-height: 20px
+	&__text
+		border-top: 1px solid #000
+		border-bottom: 1px solid #000
+		padding-top: 13px
+		height: 105px
+		margin-bottom: 12px
+		p
+			margin-top: 9px

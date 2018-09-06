@@ -1,0 +1,72 @@
+.tabulation
+	display: flex
+	&__btn
+		display: block
+		padding: 16px 50px 12px 69px
+		@include css-lock(10, 42, 650, 960, padding-left, px)
+		@include css-lock(10, 42, 650, 960, padding-right, px)
+		background-color: transparent
+		&.is-active
+			background-color: $decor_bg
+		&:hover
+			background-color: #888888
+			color: #fff
+			transition: background-color 1s, color 1s
+			
+.tab
+	position: absolute
+	display: none
+	width: 100%
+	&.is-active
+		display: block
+	&__wrapper
+		padding: 34px 25px 22px
+		background-color: $decor_bg
+		margin-bottom: 10px
+		+r(400)
+			padding-left: 10px
+			padding-right: 10px
+	&__nav
+		margin-bottom: 27px
+	&__block
+		background-color: $inside_bg
+		padding: 0 23px
+		+r(400)
+			margin: 0 auto
+			padding: 0 15px
+	&__search
+		padding-top: 34px
+		padding-left: 55px
+		margin-bottom: 100px
+		+r(660)
+			margin-bottom: 50px
+		+r(600)
+			padding-left: 0
+	&__content
+		padding-bottom: 92px
+		+r(450)
+			padding-bottom: 50px
+
+
+.tab-nav
+	display: flex
+	flex-wrap: wrap
+	&__item
+		border-left: 1px solid #000
+		&:first-child
+			border-left-color: transparent
+		+r(380)
+			width: 50%
+			border-left-color: transparent
+	&__btn
+		display: block
+		background-color: $decor_bg
+		+roboto
+		font-size: 16px
+		line-height: calc(20/16)
+		letter-spacing: 0.4px
+		padding: 10px 49px 0 44px
+		@include css-lock(10, 42, 650, 960, padding-left, px)
+		@include css-lock(10, 42, 650, 960, padding-right, px)
+		&:hover
+			font-weight: 700

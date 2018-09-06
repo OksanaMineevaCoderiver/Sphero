@@ -1,0 +1,26 @@
+.search
+	position: relative
+	display: inline-block
+	&__input
+		height: 43px
+		width: 500px
+		@include css-lock(240, 500, 320, 960, width, px)
+		padding-left: 50px
+		background: url(../img/search.png) no-repeat
+		background-position: center left 5px
+		border: 1px solid $article_border
+		&[placeholder]
+			color: #333333
+			font-family: Roboto
+			font-size: 22px
+			font-weight: 400
+			line-height: 20px
+	&__btn
+		position: absolute
+		right: 0
+		top: 0
+		width: 43px
+		height: 42px
+		background-color: $accent
+		border-bottom: 1px solid $article_border
+		color: #fff

@@ -1,0 +1,28 @@
+.body
+	background-color: $main_bg
+.out
+	max-width: 1218px
+	margin: 0 auto
+	padding-left: 0
+
+.main
+
+	position: relative
+
+.header
+	margin-top: 43px
+	position: relative
+	+r(650)
+		margin-top: 20px
+	&__logo
+		float: left
+		margin-left: 14px
+	&__nav
+		padding-top: 17px
+		margin-bottom: 24px
+		+r(570)
+			margin-bottom: 44px
+	&__user
+		position: relative
+		height: 62px
+		@include css-lock(110, 62, 400, 700, height, px)
